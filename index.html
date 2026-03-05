@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>StudyOS</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="manifest" href="manifest.json">
+
+</head>
+
+
+<body>
+
+<header>
+
+<h1>StudyOS</h1>
+
+<nav>
+
+<button data-tab="ai">AI</button>
+
+<button data-tab="notes">ノート</button>
+
+<button data-tab="cards">暗記カード</button>
+
+<button data-tab="quiz">クイズ</button>
+
+<button data-tab="timer">タイマー</button>
+
+<button id="darkBtn">🌙</button>
+
+</nav>
+
+</header>
+
+
+<main>
+
+<section id="ai" class="tab">
+
+<textarea id="aiInput"
+
+placeholder="質問を書いてください"></textarea>
+
+<button id="askBtn">質問</button>
+
+<div id="aiOutput"></div>
+
+</section>
+
+
+<section id="notes" class="tab">
+
+<input id="noteTitle"
+
+placeholder="タイトル">
+
+<textarea id="noteText"
+
+placeholder="ノート"></textarea>
+
+<button id="saveNote">保存</button>
+
+<ul id="noteList"></ul>
+
+</section>
+
+
+<section id="cards" class="tab">
+
+<input id="cardQ"
+
+placeholder="質問">
+
+<input id="cardA"
+
+placeholder="答え">
+
+<button id="addCard">追加</button>
+
+<div id="cardViewer"></div>
+
+</section>
+
+
+<section id="quiz" class="tab">
+
+<button id="makeQuiz">
+
+クイズ生成
+
+</button>
+
+<div id="quizArea"></div>
+
+</section>
+
+
+<section id="timer" class="tab">
+
+<h2 id="time">25:00</h2>
+
+<button id="startTimer">開始</button>
+
+<button id="resetTimer">リセット</button>
+
+</section>
+
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
